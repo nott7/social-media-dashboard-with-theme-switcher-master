@@ -28,7 +28,7 @@ Users should be able to:
 
 - Mobile Design Dark:
 
-![](./screenshots/mobile-menu-dark.png)
+![](./screenshots/mobile-design-dark.png)
 
 
 
