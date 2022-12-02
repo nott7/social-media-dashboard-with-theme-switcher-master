@@ -15,6 +15,7 @@ Users should be able to:
 
 ### Screenshot
 - Desktop Design:
+
 ![](./screenshots/desktop-design.png)
 
 - Desktop Design Dark:
