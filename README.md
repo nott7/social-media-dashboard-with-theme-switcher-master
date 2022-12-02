@@ -14,7 +14,6 @@ Users should be able to:
 - Toggle color theme to their preference
 
 ### Screenshot
-
 - Desktop Design:
 ![](./screenshots/desktop-design.png)
 
