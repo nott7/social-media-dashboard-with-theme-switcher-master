@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="/anime.min.js" defer></script>
+    <script src="/animations.js" defer></script>
+    <script src="/dark-mode.js" defer></script>
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <header>
+      <div class="header__content">
+        <div class="header__text">
+          <h1>Social Media Dashboard</h1>
+          <p>Total Followers: 23,004</p>
+        </div>
+
+        <hr>
+
+        <div class="header__switch">
+          <div class="header__switch--mode">
+            <p>Switch to <span id="switch__mode"> Dark</span> Mode</p>
+            <input type="checkbox" id="toggle" class="toggle--checkbox" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="social__cards">
+        <div class="social__card" id="facebook__card">
+          <div class="social__username">
+            <img src="/images/icon-facebook.svg" alt="Facebook Icon" />
+            <p>@nathanf</p>
+          </div>
+          <div class="social__followers">
+            <h1 id="facebook__followers">1987</h1>
+            <p>Followers</p>
+          </div>
+          <div class="social__followers--today">
+            <img src="/images/icon-up.svg" alt="Up Arrow" />
+            <p><span id="facebook__followers--today">12</span> Today</p>
+          </div>
+        </div>
+        <div class="social__card" id="twitter__card">
+          <div class="social__username">
+            <img src="/images/icon-twitter.svg" alt="Twitter Icon" />
+            <p>@nathanf</p>
+          </div>
+          <div class="social__followers">
+            <h1 id="twitter__followers">1044</h1>
+            <p>Followers</p>
+          </div>
+          <div class="social__followers--today">
+            <img src="/images/icon-up.svg" alt="Up Arrow" />
+            <p><span id="twitter__followers--today">99</span> Today</p>
+          </div>
+        </div>
+        <div class="social__card" id="instagram__card">
+          <div class="social__username">
+            <img src="/images/icon-instagram.svg" alt="Instagram Icon" />
+            <p>@realnathanf</p>
+          </div>
+          <div class="social__followers">
+            <h1><span id="instagram__followers">11</span>k</h1>
+            <p>Followers</p>
+          </div>
+          <div class="social__followers--today">
+            <img src="/images/icon-up.svg" alt="Up Arrow" />
+            <p><span id="instagram__followers--today">1099</span> Today</p>
+          </div>
+        </div>
+        <div class="social__card" id="youtube__card">
+          <div class="social__username">
+            <img src="/images/icon-youtube.svg" alt="Youtube Icon" />
+            <p>Nathan F.</p>
+          </div>
+          <div class="social__followers">
+            <h1 id="youtube__followers">8239</h1>
+            <p>Subscribers</p>
+          </div>
+          <div class="social__followers--today__down">
+            <img src="/images/icon-down.svg" alt="Down Arrow" />
+            <p><span id="youtube__followers--today">144</span> Today</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="overview__section">
+        <div class="overview__section--header">
+          <h1>Overview - Today</h1>
+        </div>
+        <div class="overview__cards">
+          <div class="overview__card">
+            <div class="overview__card--header">
+              <h1>Page Views</h1>
+              <img src="/images/icon-facebook.svg" alt="Facebook Icon" />
+            </div>
+            <div class="overview__card--content">
+              <h1 id="facebook__views">87</h1>
+              <div class="overview__card--content--today">
+                <img src="/images/icon-up.svg" alt="Up Arrow" />
+                <p id="facebook__views--today">3%</p>
+              </div>
+            </div>
+          </div>
+          <div class="overview__card">
+            <div class="overview__card--header">
+              <h1>Likes</h1>
+              <img src="/images/icon-facebook.svg" alt="Facebook Icon" />
+            </div>
+            <div class="overview__card--content">
+              <h1  id="facebook__likes">52</h1>
+              <div class="overview__card--content--today--down">
+                <img src="/images/icon-down.svg" alt="Down Arrow" />
+                <p  id="facebook__likes--today">2%</p>
+              </div>
+            </div>
+          </div>
+          <div class="overview__card">
+            <div class="overview__card--header">
+              <h1>Likes</h1>
+              <img src="/images/icon-instagram.svg" alt="Instagram Icon" />
+            </div>
+            <div class="overview__card--content">
+              <h1 id="instagram__likes">5462</h1>
+              <div class="overview__card--content--today">
+                <img src="/images/icon-up.svg" alt="Up Arrow" />
+                <p id="instagram__likes--today">2257%</p>
+              </div>
+            </div>
+          </div>
+          <div class="overview__card">
+            <div class="overview__card--header">
+              <h1>Profile Views</h1>
+              <img src="/images/icon-instagram.svg" alt="Instagram Icon" />
+            </div>
+            <div class="overview__card--content">
+              <h1> <span id="instagram__views">52</span>k</h1>
+              <div class="overview__card--content--today">
+                <img src="/images/icon-up.svg" alt="Up Arrow" />
+                <p id="instagram__views--today">1375%</p>
+              </div>
+            </div>
+          </div>
+          <div class="overview__card">
+            <div class="overview__card--header">
+              <h1>Retweets</h1>
+              <img src="/images/icon-twitter.svg" alt="Twitter Icon" />
+            </div>
+            <div class="overview__card--content">
+              <h1 id="twitter__retweets">117</h1>
+              <div class="overview__card--content--today">
+                <img src="/images/icon-up.svg" alt="Up Arrow" />
+                <p id="twitter__retweets--today">303%</p>
+              </div>
+            </div>
+          </div>
+          <div class="overview__card">
+            <div class="overview__card--header">
+              <h1>Likes</h1>
+              <img src="/images/icon-twitter.svg" alt="Twitter Icon" />
+            </div>
+            <div class="overview__card--content">
+              <h1 id="twitter__likes">507</h1>
+              <div class="overview__card--content--today">
+                <img src="/images/icon-up.svg" alt="Up Arrow" />
+                <p id="twitter__likes--today">553%</p>
+              </div>
+            </div>
+          </div>
+          <div class="overview__card">
+            <div class="overview__card--header">
+              <h1>Likes</h1>
+              <img src="/images/icon-youtube.svg" alt="Youtube Icon" />
+            </div>
+            <div class="overview__card--content">
+              <h1 id="youtube__likes">107</h1>
+              <div class="overview__card--content--today--down">
+                <img src="/images/icon-down.svg" alt="Down Arrow" />
+                <p id="youtube__likes--today">19%</p>
+              </div>
+            </div>
+          </div>
+          <div class="overview__card">
+            <div class="overview__card--header">
+              <h1>Total Views</h1>
+              <img src="/images/icon-youtube.svg" alt="Youtube Icon" />
+            </div>
+            <div class="overview__card--content">
+              <h1 id="youtube__views">1407</h1>
+              <div class="overview__card--content--today--down">
+                <img src="/images/icon-down.svg" alt="Down Arrow" />
+                <p id="youtube__views--today">12%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor</a
+      >. Coded by <a href="#">Nott</a>.
+    </div>
+  </body>
+</html>
